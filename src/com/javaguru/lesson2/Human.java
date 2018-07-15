@@ -15,4 +15,13 @@ class Human {
                 + name + ". I'm "
                 + age + " years old.");
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }

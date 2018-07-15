@@ -11,5 +11,10 @@ class HumanDemo {
 
         firstHuman.sayHello();
         secondHuman.sayHello();
+
+        String firstHumanName = firstHuman.getName();
+        int firstHumanAge = firstHuman.getAge();
+        System.out.println(firstHumanName);
+        System.out.println(firstHumanAge);
     }
 }
