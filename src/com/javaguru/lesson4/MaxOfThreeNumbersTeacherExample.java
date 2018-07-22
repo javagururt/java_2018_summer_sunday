@@ -5,7 +5,10 @@ public class MaxOfThreeNumbersTeacherExample {
     int findMax(int firstNumber,
                 int secondNumber,
                 int thirdNumber) {
-        return 0;
+        MaxOfTwoNumbers maxOfTwoNumbers = new MaxOfTwoNumbers();
+        int maxOfFirstTwoNumbers
+                = maxOfTwoNumbers.findMax(firstNumber, secondNumber);
+        return maxOfTwoNumbers.findMax(maxOfFirstTwoNumbers, thirdNumber);
     }
 
 }
