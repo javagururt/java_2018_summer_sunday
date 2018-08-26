@@ -50,4 +50,41 @@ public class ArrayUtils {
             }
         }
     }
+
+    public static int sumArray(int[] array) {
+        int sum = 0;
+        for (int element : array) {
+            sum += element;
+        }
+        return sum;
+    }
+
+    public static double averageArray(int[] array) {
+        double sum = 0;
+        for (int element : array) {
+            sum += element;
+        }
+        return sum / array.length;
+    }
+
+    public static double averageArray(int[][] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                sum += array[i][j];
+            }
+        }
+        int elementCount = array.length * array[0].length;
+        return sum / elementCount;
+    }
+
+    public static int sumArray(int[][] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                sum += array[i][j];
+            }
+        }
+        return sum;
+    }
 }
