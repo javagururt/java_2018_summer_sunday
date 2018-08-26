@@ -10,7 +10,7 @@ public class ArrayUtils {
 
     public static void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(101);
         }
     }
@@ -18,6 +18,28 @@ public class ArrayUtils {
     public static void printArrayToConsole(int[] array) {
         for (int element : array) {
             System.out.println(element);
+        }
+    }
+
+    public static int[][] createTwoDimensionalArray(int row, int column) {
+        return new int[row][column];
+    }
+
+    public static void fillArrayWithRandomNumbers(int[][] array) {
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = random.nextInt(101);
+            }
+        }
+    }
+
+    public static void printArrayToConsole(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }
