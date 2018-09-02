@@ -9,14 +9,18 @@ class FillLinkedListToEndTest {
 
         long start = System.currentTimeMillis();
 
-        for (int i = 0; i < 10_000_000; i++) {
-            integers.add(i);
-        }
+        fillListWithNumbers(integers);
 
         long finish = System.currentTimeMillis();
 
         long result = finish - start;
 
         System.out.println("Result: " + result + " ms");
+    }
+
+    public static void fillListWithNumbers(List<Integer> integers) {
+        for (int i = 0; i < 10_000_000; i++) {
+            integers.add(i);
+        }
     }
 }
