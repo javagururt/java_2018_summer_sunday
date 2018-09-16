@@ -22,4 +22,12 @@ class DreamHouse {
         }
         return totalArea;
     }
+
+    public void printAllRoomNames() {
+        rooms.stream()
+                .map(room -> room.getName())
+                .filter(name -> !name.contains("Test"))
+                .map(name -> name.toUpperCase())
+                .forEach(name -> System.out.println(name));
+    }
 }
