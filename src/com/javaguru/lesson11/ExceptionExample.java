@@ -12,6 +12,8 @@ class ExceptionExample {
             System.out.println(e.getMessage());
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("FINALLY");
         }
     }
 
